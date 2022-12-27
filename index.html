@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./css/base/variable.css">
+  <link rel="stylesheet" href="./css/base/reset.css">
+  <link rel="stylesheet" href="./css/base/base.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/main.css">
+
+  <link rel="stylesheet" href="./css/cards.css">
+
+  <link rel="stylesheet" href="./css/form.css">
+
+  <link rel="stylesheet" href="./css/send.css">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+</head>
+<body>
+  <main class="main">
+    <div class="cards">
+      <div>
+        <img class="card__front" src="./images/bg-card-front.png" alt="Image Card Front">
+        
+        <img class="card__logo" src="./images/card-logo.svg" alt="Image Card Logo">
+        <p class="card__number" id="card-number">1234 &nbsp; 5678 &nbsp; 9123 &nbsp; 0000</p>
+        <p class="card__name" id="card-name">FELICE LEIRE</p>
+        <p class="card__date" id="card-date">09/00</p>
+      </div>
+      <div>
+        <img class="card__back" src="./images/bg-card-back.png" alt="Image Card Back">
+        <p class="card__cvc" id="card-cvc">000</p>
+      </div>  
+    </div>
+    <div id="form" class="form">
+      <form class="form__form">
+        <div class="form__group">
+          <label class="form__label">Cardholder Name</label>
+          <input id="input-name" class="form__input input__large" type="text" value="Jane Appleseed" placeholder="Enter your name">
+          <label id="name-error" class="form__error">Hola</label>
+        </div>
+        <div class="form__group">
+          <label class="form__label">Card Number</label>
+          <input id="input-number" class="form__input input__large" type="number" value="1234 5678 9123 0000" placeholder="Enter your card number">
+          <label id="number-error" class="form__error">Hola</label>
+        </div>
+        <div class="form__row">
+          <div class="form__group">
+            <label class="form__label">Exp. Date (MM/YY)</label>
+            <div class="date__inputs">
+              <input id="input-month" class="form__input input__small" type="number" placeholder="MM">
+              <input id="input-year" class="form__input input__small" type="number" placeholder="YY">
+            </div>
+            <label id="date-error" class="form__error">Hola</label>
+          </div>
+          <div  class="form__group form_cvc">
+            <label class="form__label">CVC</label>
+            <input id="input-cvc" class="form__input input__medium" type="number" placeholder="e.g. 123">
+            <label id="cvc-error" class="form__error">Hola</label>
+          </div>
+        </div>
+        <input id="form-button" class="form__button" type="button" value="Confirm">
+      </form>
+    </div>
+    <div id="send" class="send">
+      <img class="send__image" src="./images/icon-complete.svg" alt="">
+      <h2 class="send__title">THANK YOU!</h2>
+      <p class="send__text">We've added your card details</p>
+      <button id="send-button" class="send__button">Continue</button>
+    </div>
+  </main>
+  <script src="./js/index.js"></script>
+</body>
+</html>

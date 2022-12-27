@@ -1,0 +1,47 @@
+.send{
+    align-items: center;
+    display: none;
+    flex-direction: column;
+    margin: 15% 10%;
+    width: 90%;
+}
+
+.send__image{
+    height: auto;
+    width: 10%;
+}
+
+.send__title{
+    color: var(--very-dark-violet);
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.send__text{
+    color: var(--dark-grayish-violet);
+}
+
+.send__button{
+    background: var(--very-dark-violet);
+    border-radius: 0.5rem;
+    color: var(--white);
+    cursor: pointer;
+    margin-top: 2rem;
+    padding: 0.8rem 0;
+    width: 50%;
+}
+
+@media screen and (max-width: 375px) {
+    .send{
+        margin: 15% auto;
+    }
+
+    .send__image{
+        margin-top: 10%;
+        width: 20%;
+    }
+
+    .send__button{
+        width: 100%;
+    }
+}
