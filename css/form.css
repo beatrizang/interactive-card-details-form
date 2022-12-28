@@ -60,14 +60,14 @@
     padding-top: 0.5rem;
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width: 375px) {
     .form{
         display: flex;
         margin: 20% auto;
         width: 95%;
     }
     .form__form{
-        width: 95%;
+        width: 100%;
     }
 
     .form__row{
@@ -76,13 +76,13 @@
 
     .form_cvc{
         margin-left: 0;
-        width: 53%;
+        width: 56%;
     }
 
     .form__button{
-
         padding: 0.8rem;
         margin-bottom: 2rem;
     }
     
 }
+

@@ -14,22 +14,55 @@
 }
 
 .card__number{
+    background: transparent;
     color: var(--white);
     font-size: 1.5rem;
+    height: 2rem;
+    outline: none;
+    overflow: hidden;
     position: fixed;
-    transform: translate(42%, -400%);  
+    left: 9%;
+    top: 32%;
+    resize: none;
 }
 
 .card__name{
+    background: transparent;
     color: var(--white);
+    height: 1.1rem;
     position: fixed;
-    transform: translate(130%, -200%);  
+    left: 9%;
+    top: 42%;
+    outline: none;
+    overflow: hidden;
+    position: fixed;
+    resize: none;
 }
 
 .card__date{
+    align-items: center;
     color: var(--white);
+    display: flex;
     position: fixed;
-    transform: translate(950%, -200%); 
+    left: 32%;
+    top: 42%;
+}
+
+.card__month{
+    background: transparent;
+    height: 1.1rem;
+    outline: none;
+    overflow: hidden;
+    resize: none;
+    width: 1.5rem;
+}
+.card__year{
+    background: transparent;
+    height: 1.1rem;
+    outline: none;
+    overflow: hidden;
+    resize: none;
+    width: 1.5rem;
 }
 
 .card__back{
@@ -37,8 +70,16 @@
 }
 
 .card__cvc{
+    background: transparent;
     color: var(--white);
-    transform: translate(130%, -620%);
+    height: 1.1rem;
+    left: 43%;
+    top: 71%;
+    outline: none;
+    overflow: hidden;
+    position: fixed;
+    resize: none;
+    width: 2rem;
 }
 
 @media screen and (max-width: 375px){
@@ -56,7 +97,7 @@
 
     .card__logo{
         position: absolute;
-        top: 43%;
+        top: 42%;
         left: -8%;
         width: 15%;
         z-index: 2; 
@@ -65,24 +106,24 @@
     .card__number{
         font-size: 1rem;
         position: absolute;
-        top: 48%;
-        left: -8%;
+        top: 32%;
+        left: 13%;
         z-index: 2; 
     }
     
     .card__name{
         font-size: 0.8rem;
         position: absolute;
-        top: 47%;
-        left: -13%;
+        top: 39%;
+        left: 13%;
         z-index: 2; 
     }
     
     .card__date{
         font-size: 0.8rem;
         position: absolute;
-        top: 47%;
-        left: -33%;
+        top: 39%;
+        left: 60%;
         z-index: 3;
     }
 
@@ -94,8 +135,8 @@
         z-index: 0;
     }
     .card__cvc{
-        left: 65.5%;
-        top: 34.3%;
+        left: 75%;
+        top: 14%;
         position: absolute;
         z-index: 3;
     }

@@ -30,26 +30,30 @@
         <img class="card__front" src="./images/bg-card-front.png" alt="Image Card Front">
         
         <img class="card__logo" src="./images/card-logo.svg" alt="Image Card Logo">
-        <p class="card__number" id="card-number">1234 &nbsp; 5678 &nbsp; 9123 &nbsp; 0000</p>
-        <p class="card__name" id="card-name">FELICE LEIRE</p>
-        <p class="card__date" id="card-date">09/00</p>
+        <textarea readonly class="card__number" id="card-number" maxlength="16">0000 0000 0000 0000</textarea>
+        <textarea red class="card__name" id="card-name">NAME LASTNAME</textarea>
+        <div class="card__date">
+          <textarea readonly id="card-month" class="card__month">09</textarea>
+          <p>/</p>
+          <textarea readonly class="card__year" id="card-year">00</textarea>
+        </div>
       </div>
       <div>
         <img class="card__back" src="./images/bg-card-back.png" alt="Image Card Back">
-        <p class="card__cvc" id="card-cvc">000</p>
+        <textarea readonly class="card__cvc" id="card-cvc" maxlength="3">000</textarea>
       </div>  
     </div>
     <div id="form" class="form">
       <form class="form__form">
         <div class="form__group">
           <label class="form__label">Cardholder Name</label>
-          <input id="input-name" class="form__input input__large" type="text" value="Jane Appleseed" placeholder="Enter your name">
-          <label id="name-error" class="form__error">Hola</label>
+          <input id="input-name" class="form__input input__large" type="text" placeholder="Enter your name">
+          <label id="name-error" class="form__error"></label>
         </div>
         <div class="form__group">
           <label class="form__label">Card Number</label>
           <input id="input-number" class="form__input input__large" type="number" value="1234 5678 9123 0000" placeholder="Enter your card number">
-          <label id="number-error" class="form__error">Hola</label>
+          <label id="number-error" class="form__error"></label>
         </div>
         <div class="form__row">
           <div class="form__group">
@@ -58,12 +62,12 @@
               <input id="input-month" class="form__input input__small" type="number" placeholder="MM">
               <input id="input-year" class="form__input input__small" type="number" placeholder="YY">
             </div>
-            <label id="date-error" class="form__error">Hola</label>
+            <label id="date-error" class="form__error"></label>
           </div>
           <div  class="form__group form_cvc">
             <label class="form__label">CVC</label>
-            <input id="input-cvc" class="form__input input__medium" type="number" placeholder="e.g. 123">
-            <label id="cvc-error" class="form__error">Hola</label>
+            <input maxlength="3" id="input-cvc" class="form__input input__medium" type="number" placeholder="e.g. 123">
+            <label id="cvc-error" class="form__error"></label>
           </div>
         </div>
         <input id="form-button" class="form__button" type="button" value="Confirm">
