@@ -31,6 +31,22 @@
     width: 50%;
 }
 
+@media screen and (max-width: 768px) {
+    .send{
+        margin: 15% auto;
+    }
+
+    .send__image{
+        margin-top: 10%;
+        width: 20%;
+    }
+
+    .send__button{
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 375px) {
     .send{
         margin: 15% auto;
