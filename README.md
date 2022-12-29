@@ -27,13 +27,17 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./images/screeshots/1.png)
+
+![](./images/screeshots/2.png)
+
+![](./images/screeshots/3.png)
 
 
 ### Links
 
 - Solution URL: 
-- Live Site URL: 
+- Live Site URL: https://rococo-youtiao-56c09a.netlify.app/
 
 ## My process
 
